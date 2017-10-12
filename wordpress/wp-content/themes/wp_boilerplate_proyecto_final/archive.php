@@ -1,23 +1,60 @@
-<?php get_header() ?>
+ <?php get_header(); ?> 
 
-	<?php if (have_posts()) { ?>
+ <section class="container-fluid">
+     <div class="row">
+        <div class="blog-section-style">
+            <div class="blog-title">
+                
+                <h1><?php echo "Lenguaje Visual" ?></h1>
 
-	<ul>
-		<?php while ( have_posts() ) { the_post(); ?>
-		<li>
-			<a href="<?php the_permalink() ?>">
-				<?php the_post_thumbnail() ?>
-				<?php the_title() ?>
-				<time datetime="<?php the_time('Y-m-d') ?>"><?php the_time('d \d\e F \d\e Y') ?></time>
-				<?php the_excerpt() ?>
-			</a>
-		</li>
-		<?php }; ?>
-	</ul>
+            </div> <!--Blog Title-->
 
-	<?php } else { ?>
-		<!-- Content -->
-	<?php } wp_reset_query(); ?>
+        <?php 
 
-	<?php get_sidebar() ?>
-<?php get_footer() ?>
+            $args = array(
+                'posts_per_page' => 15);
+
+            $the_query = new WP_Query( $args ); ?>
+
+
+        <?php if ( $the_query->have_posts() ) : ?>
+
+
+        <?php while ( $the_query->have_posts()) : $the_query->the_post(); ?>
+
+                
+            <div class=" col-md-5 col-sm-5 post-style thumbnail">
+                <?php the_post_thumbnail( 'entradas' ); ?>
+                <?php the_title('<h3>', '</h3>'); ?>
+
+                <hr class="line-feature-post">
+
+                <p class="text-center">
+                  Escrito por <span> <?php the_author(); ?></span>
+                </p>
+                <p>
+                    <?php the_excerpt(); ?>
+                </p>
+
+                <a href="<?php the_permalink() ?>" type="button" class="btn btn-warning">Leer más</a>
+
+            </div>
+
+            <?php endwhile; ?>
+
+            <?php wp_reset_postdata(); ?>
+     </div>
+ </section> 
+<?php 
+function your_themes_pagination(){
+    global $wp_query; 
+     paginate_links();
+} ?>
+
+ <?php paginate_links(); ?>
+
+ <?php get_footer(); ?> 
+
+<?php else : ?>
+    <p><?php esc_html_e( 'No encontramos lo que buscabas' ); ?></p>
+<?php endif; ?>

@@ -1,7 +1,7 @@
 <?php get_header() ?>
-	<section class="container">
+	<section class="container section-portfolio">
 		<h1><?php echo('Portafolio')?></h1>
-		<div class="row">
+		
 			<?php 
 			    query_posts(array( 
 			        'post_type' => 'portfolio_post_type',
@@ -12,15 +12,13 @@
 			?>
 			<?php while (have_posts()) : the_post(); ?>
 
-			<div class="thumbnail col-md-6">
-				<?php the_post_thumbnail('entradas'); ?>
+			<div class="thumbnail col-md-5 col-sm-12 col-xs-12 portfolio-style">
+				<?php the_post_thumbnail('slideshow'); ?>
 				<h3><?php the_title(); ?></h3>
 				<p><?php the_content(); ?></p>
 				</div>
 			</div>
-	
 			
-		</div>
         <?php endwhile;?>
     </section>        
 		

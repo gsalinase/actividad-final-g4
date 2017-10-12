@@ -1,7 +1,7 @@
  <?php get_header(); ?> 
 
  <section class="container-fluid">
-     <div class="row">
+    
         <div class="blog-section-style">
             <div class="blog-title">
                 <?php

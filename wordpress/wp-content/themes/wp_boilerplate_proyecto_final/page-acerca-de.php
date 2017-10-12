@@ -1,26 +1,26 @@
 <?php get_header() ?>
 <!-- Why us? -->
-	<header class="container why_style">
-		<h1>¿Por qué nosotros?</h1>
+	<header class="container text-center why_style">
+		<h1>¿Por qué Nosotros?</h1>
 		<div class="row">
-			<div class="col-md-3 why-img">
-				<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/acerca-de-page/why-img-4.png" alt="">
+			<div class="col-md-3 col-sm-4 col-xs-12 why-img">
+				<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/acerca-de-page/why-img-4.png" alt="creatividad">
 				<h3>Creatividad</h3>
 				<p>Buscamos las soluciones más simples que estén conectadas con el verdadero problema y con el objetivo a alcanzar. Observamos el bosque completo para dar soluciones que no se habían considerado.
 				</p>
 			</div>
-			<div class="col-md-3 why-img">
-				<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/acerca-de-page/why-img-3.png" alt="lentes">
+			<div class="col-md-3 col-sm-4 col-xs-12 why-img">
+				<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/acerca-de-page/why-img-3.png" alt="flexibilidad">
 				<h3>Flexibilidad</h3>
 				<p>Todos nuestros servicios son hechos a tu medida. Buscamos que estés contento con lo que pediste y que te sientas escuchado y  compredido.</p>
 			</div>
-			<div class="col-md-3 why-img">
-				<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/acerca-de-page/why-img-1.png" alt="lentes">
+			<div class="col-md-3 col-sm-4 col-xs-12 why-img">
+				<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/acerca-de-page/why-img-1.png" alt="visión de negocio">
 				<h3>Visión de negocio</h3>
 				<p>Buscamos no solo dibujar bien, sino que buscamos que el Lenguaje Visual sea un aliado estratégico para tu negocio. Que te permita tomar decisiones importantes y a visualizar nuevas cosas.</p>
 			</div>
-			<div class="col-md-3 why-img">
-				<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/acerca-de-page/why-img-2.png" alt="lentes">
+			<div class="col-md-3 col-sm-4 col-xs-12 why-img">
+				<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/acerca-de-page/why-img-2.png" alt="compromiso">
 				<h3>Compromiso</h3>
 				<p>Entendemos el mundo de los negocios y sus tiempos. No te preocupes!, te ayudaremos a alcanzar esos objetivos lo más rápido y efectivamente posible, siendo un partner en tu negocio.</p>
 			</div>
@@ -67,8 +67,8 @@
                             <h5>Coordinador Investigación con Pregrado, Vicerrectoría de Investigación, Universidad Mayor.</h5>
                             <p>Lente de Kris es una excelente manera de vivenciar experiencias de emprendimiento e innovación, tanto por lo lúdico como por la excelente forma de plasmar los resultados que se logran en el taller.</p>
                         </blockquote>
-                        <div class="profile-circle" style="background-color: rgba(145,169,216,.2);">
-                        
+                        <div class="profile-circle">
+                        	<img class="profile-circle" src="http://www.lentedekris.cl/wp-content/uploads/2017/03/AAEAAQAAAAAAAAecAAAAJGZiNzhlODc4LTZkMDAtNGVkNS05MjY0LWViYmMyYjAzYThhNg.jpg" width="50px;" alt="">
                         </div>
                     </div>
                   </div>
@@ -79,8 +79,8 @@
 	
 	<!-- Timeline-->
 	<section class="container">
-	    <div class="">
-	        <h2>¿Cómo Empezó Todo?</h2>
+	    <div class="timeline-text">
+	        <h1>¿Cómo Empezó Todo?</h1>
 	    </div>
 	    <ul class="timeline">
 	        <li>
@@ -130,27 +130,30 @@
 	    </ul>
 	</section><!-- Timeline-->
 
-	<section class="container-fluid">
+	<!-- Partner-->
+	<section class="container-fluid section-partner-style">
 		<h2>Nuestros Partners</h2>
 		<div class="row">
-			<div class="col-md-4">
-				<img src="" alt="">
-				<h3>lorem</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit impedit soluta architecto quis ipsam facilis, repudiandae obcaecati dolor, cupiditate minus dolorum deleniti, maiores pariatur adipisci! Facilis iusto ipsam, numquam aliquid.</p>
+			<div class="col-md-4 col-sm-4 col-xs-12 partner-img">
+				<a href="http://www.blisslab.cl/">
+					<img class="img-responsive" src="<?php echo get_bloginfo('template_url') ?>/assets/images/acerca-de-page/bliss-lab.jpg" alt="Bliss Lab">
+				</a>
+				<h3>Bliss Lab</h3>
+				<p>Laboratorio de Innovación que bu﻿﻿﻿﻿sca entregar ﻿﻿﻿﻿soluciones innovadoras y potenciar el capital humano en las compañías. Diseñan workshop con diversas metodologías que permiten movilizar y activar el aprendizaje en las organizaciones en diversos temas de cultura, liderazgo, comunicación y efectividad.</p>
 			</div>
-			<div class="col-md-4">
-				<img src="" alt="">
-				<h3>lorem</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta amet, non libero nisi deserunt totam fugiat aliquid, beatae, ratione corporis quod eius ipsa. Sunt magnam voluptas ea quasi molestiae reprehenderit!</p>
+			<div class="col-md-4 col-sm-4 col-xs-12 partner-img">
+				<a href="http://www.lamachine.cl/">
+					<img class="img-responsive" src="<?php echo get_bloginfo('template_url') ?>/assets/images/acerca-de-page/lamachine.jpg" alt="la Machine"></a>
+				<h3>LaMachine</h3>
+				<p>Productora Audiovisual que desarrolla todo tipo de productos audiovisuales para mejorar la comunicación, entendimiento e integración del mensaje con el público objetivo. Desarrollan videos corporativos, memorias audiovisuales, ﻿﻿brainstorming﻿﻿ in house, documentales, contenidos para la televisión y spots publicitarios.</p>
 			</div>
-			<div class="col-md-4">
-				<img src="" alt="">
-				<h3>lorem</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia perferendis temporibus distinctio, odit maxime, vel ipsum, aut cupiditate tempore dignissimos obcaecati in veniam laudantium nam, soluta voluptatum doloribus. Dolorem, ratione.</p>
+			<div class="col-md-4 col-sm-4 col-xs-12 partner-img">
+				<a href="http://www.javierrusso.com/">
+					<img class="img-responsive" src="<?php echo get_bloginfo('template_url') ?>/assets/images/acerca-de-page/foto-russo.jpg" alt="Javir Russo"></a>
+				<h3>Javier Russo</h3>
+				<p>Javier es un publicista especializado en creatividad que trabaja hace más de veinte años como consultor y facilitador con metodologías de innovación, emprendimiento y negocios para apoyar a las personas en organizaciones y comunidades, para así generar valor a la empresa, país y sociedad. </p>
 			</div>
 		</div>
-	</section>
-
-
+	</section><!-- Partner-->
 
 <?php get_footer() ?>

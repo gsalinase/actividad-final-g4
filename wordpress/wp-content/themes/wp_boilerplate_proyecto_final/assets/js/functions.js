@@ -4,12 +4,22 @@ var map;
 function initMap() {
         // Create a map object and specify the DOM element for display.
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
+          center: {lat: -33.4289661, lng: -70.6060014},
+          zoom: 15
         });
       }
 
+
 $(document).ready(function(){
+
+    
+    var url = window.location; 
+    var element = $('ul.sidebar-menu a').filter(function() {
+    return this.href == url || url.href.indexOf(this.href) == 0; }).parent().addClass('active');
+    if (element.is('li')) { 
+         element.addClass('active').parent().parent('li').addClass('active');
+     }
+    
    
     // Portfolio & filter
 
